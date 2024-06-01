@@ -19,7 +19,6 @@ class BeanInferenceService():
         bean_df = DataFrame.from_dict(bean).transpose()
         headers = bean_df.iloc[0]
         prepared_bean_df = DataFrame(bean_df.values[1:], columns=headers)
-        print(prepared_bean_df)
         prediction = self.svc.predict(prepared_bean_df)
         classes = self.encoder.inverse_transform(prediction)
         return {"prediction": classes[0]}
