@@ -1,0 +1,9 @@
+joblib==1.4.0
+pandas==2.2.2
+scikit_learn==1.4.2
+dvc==3.50.1
+dvclive==3.46.0
+dvc-gdrive==3.0.1
+uvicorn==0.30.0
+pydantic==2.7.2
+fastapi==0.111.0
